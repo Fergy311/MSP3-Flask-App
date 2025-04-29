@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
+.container {
+    max-width: 600px; /* Limit the width of the form */
+    margin: auto; /* Center the form */
+    padding: 20px; /* Add padding around the form */
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.view_rec {
+    margin-top: 20px; /* Space above the view recommendation button */
+    padding: 10px; /* Padding around the button */
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+    line-height: 1.5; /* Line height for readability */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    text-align: center; /* Center text in the button */
+    display: inline-block; /* Make the button inline-block for better alignment */
+}
+.viewrec:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    text-decoration: none; /* Remove underline on hover */
+    text-decoration: none; /* Remove underline from links */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+.viewrec:active {
+    background-color: #004494; /* Even darker blue when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect when clicked */
+    transform: translateY(1px); /* Slightly move the button down when clicked */
+    transition: background-color 0.1s ease, transform 0.1s ease; /* Quick transition for click effect */
+}
+
+.btn {
+    margin-top: 10px; /* Space above buttons */
+}
+
+.reclist {
+    margin-top: 20px; /* Space above the recommendation list */
+    padding: 10px; /* Padding around the list */
+    background-color: #f9f9f9; /* Light background for the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding around the list */
+    background-color: #ffffff; /* White background for the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the list */
+    font-size: 16px; /* Font size for the list */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the list */
+    border: 1px solid #ddd; /* Border around the list */
+    background-color: #f9f9f9; /* Light background for the list */
+
+}
+.reclist ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+.reclist h5 {
+    margin-bottom: 10px; /* Space below the heading */
+    text-size-adjust: 100%; /* Prevent text resizing on mobile devices */
+}
+.reclist li {
+    margin-bottom: 5px; /* Space between list items */
+}
+.reclist a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+}
+.reclist a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.img-thumbnail {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    margin-bottom: 20px; /* Space below the image */
+    display: block; /* Make the image a block element for better alignment */
+}

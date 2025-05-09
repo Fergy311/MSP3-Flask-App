@@ -1,0 +1,477 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved line height for readability */
+    font-size: 16px; /* Base font size for the body */
+    text-align: center; /* Center text in the body */
+    padding: 20px; /* Padding around the body */
+
+}
+
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    text-align: center; /* Center the navigation items */
+    margin-bottom: 20px; /* Space below the navigation bar */
+    border-radius: 8px; /* Rounded corners for the navigation bar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the navigation bar */
+    position: fixed; /* Fix the navigation bar at the top */
+    width: 100%; /* Full width for the navigation bar */
+    top: 0; /* Position at the top of the page */
+    left: 0; /* Align to the left of the page */
+    z-index: 1000; /* Ensure the navigation bar is above other content */
+    display: flex; /* Use flexbox for layout */
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the navigation items */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    flex-direction: row; /* Arrange items in a row */
+    gap: 20px; /* Space between items */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 10px; /* Padding around each navigation item */
+    border-radius: 5px; /* Rounded corners for navigation items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Font size for navigation links */
+    font-weight: bold; /* Bold text for navigation links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    padding: 10px; /* Padding around each navigation link */
+    border-radius: 5px; /* Rounded corners for navigation links */
+    display: inline-block; /* Make the link a block element for better alignment */
+    text-align: center; /* Center text in the link */
+    width: 100%; /* Full width for the link */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: #4CAF50; /* Green background for navigation links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #f4f4f4; /* Light color on hover */
+    background-color: #45a049; /* Darker green on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    transform: translateY(-2px); /* Slightly move the link up on hover */
+    transition: transform 0.3s ease; /* Smooth transition for movement */
+    text-align: center; /* Center text in the link */
+    display: inline-block; /* Make the link a block element for better alignment */
+    width: 100%; /* Full width for the link */
+}
+
+.welcome-message {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+    color: #333;
+}
+
+.welcome-message h1 {
+    font-size: 36px; /* Increase the font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+.welcome-message p {
+    font-size: 18px; /* Increase the font size for the paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.latest-recipes {
+    margin-top: 20px; /* Space above the latest recipes section */
+    padding: 10px; /* Padding around the section */
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding around the section */
+    background-color: #ffffff; /* White background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the section */
+    font-size: 16px; /* Font size for the section */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the section */
+    border: 1px solid #ddd; /* Border around the section */
+
+}
+
+.content {
+    padding: 20px;
+    background-color: #ffffff; /* White background for the content area */
+    border-radius: 8px; /* Rounded corners for the content area */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the content area */
+    margin-bottom: 20px; /* Space below the content area */
+    font-size: 16px; /* Font size for the content area */
+
+
+}
+.container-add {
+    max-width: 600px; /* Limit the width of the form */
+    margin: auto; /* Center the form */
+    padding: 20px; /* Add padding around the form */
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the form */
+    font-size: 16px; /* Font size for the form */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the form */
+    border: 1px solid #ddd; /* Border around the form */
+    background-color: #f9f9f9; /* Light background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the form */
+
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+.form-group label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Bold text for labels */
+}
+.form-group input[type="text"],
+
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.new-recipes {
+    margin-top: 20px; /* Space above the new recipes section */
+    padding: 10px; /* Padding around the section */
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding around the section */
+    background-color: #ffffff; /* White background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the section */
+    font-size: 16px; /* Font size for the section */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the section */
+    border: 1px solid #ddd; /* Border around the section */
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the section */
+    font-size: 16px; /* Font size for the section */
+    line-height: 1.5; /* Line height for readability */
+}
+
+title {
+    font-size: 24px; /* Font size for the title */
+    margin-bottom: 10px; /* Space below the title */
+    text-align: center; /* Center the title */
+    color: #333; /* Text color for the title */
+}
+
+.recipe-title h1 {
+    font-size: 36px; /* Font size for the recipe title */
+    margin-top: 90px; /* Space above the recipe title */
+    margin-bottom: 10px; /* Space below the recipe title */
+    text-align: center; /* Center the recipe title */
+    color: #333; /* Text color for the recipe title */
+    font-weight: bold; /* Bold text for the recipe title */
+    text-decoration: underline;
+}
+
+.ingredients {
+    margin-top: 20px; /* Space above the ingredients section */
+    padding: 10px; /* Padding around the section */
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding around the section */
+    background-color: #ffffff; /* White background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the section */
+    font-size: 30px; /* Font size for the section */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the section */
+    border: 1px solid #ddd; /* Border around the section */
+    text-decoration: none;
+}
+
+.ingredients ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 10px; /* Space between items */
+}
+.ingredients li {
+    margin-bottom: 5px; /* Space between list items */
+    font-size: 16px; /* Font size for list items */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for list items */
+    border: 1px solid #ddd; /* Border around list items */
+    background-color: #f9f9f9; /* Light background for list items */
+    border-radius: 8px; /* Rounded corners for list items */
+    padding: 10px; /* Padding around list items */
+}
+
+.ingredients p {
+    margin-bottom: 10px; /* Space below the paragraph */
+    font-size: 16px; /* Font size for the paragraph */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the paragraph */
+    border: 1px solid #ddd; /* Border around the paragraph */
+    background-color: #f9f9f9; /* Light background for the paragraph */
+    border-radius: 8px; /* Rounded corners for the paragraph */
+    padding: 10px; /* Padding around the paragraph */
+}
+
+.instructions {
+    margin-top: 20px; /* Space above the instructions section */
+    padding: 10px; /* Padding around the section */
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding around the section */
+    background-color: #ffffff; /* White background for the section */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the section */
+    font-size: 16px; /* Font size for the section */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the section */
+    border: 1px solid #ddd; /* Border around the section */
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none;
+}
+
+
+.instructions ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 10px; /* Space between items */
+}
+.instructions li {
+    margin-bottom: 5px; /* Space between list items */
+    font-size: 16px; /* Font size for list items */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for list items */
+    border: 1px solid #ddd; /* Border around list items */
+    background-color: #f9f9f9; /* Light background for list items */
+    border-radius: 8px; /* Rounded corners for list items */
+    padding: 10px; /* Padding around list items */
+}
+
+.instructions p {
+    margin-bottom: 10px; /* Space below the paragraph */
+    font-size: 16px; /* Font size for the paragraph */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the paragraph */
+    border: 1px solid #ddd; /* Border around the paragraph */
+    background-color: #f9f9f9; /* Light background for the paragraph */
+    border-radius: 8px; /* Rounded corners for the paragraph */
+    padding: 10px; /* Padding around the paragraph */
+}
+.view-recipe {
+    margin-top: 70px; /* Space above the view recipe button */
+    padding: 10px; /* Padding around the button */
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+    line-height: 1.5; /* Line height for readability */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    text-align: center; /* Center text in the button */
+    display: inline-block; /* Make the button inline-block for better alignment */
+}
+
+.view_rec {
+    margin-top: 70px; /* Space above the view recommendation button */
+    padding: 10px; /* Padding around the button */
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+    line-height: 1.5; /* Line height for readability */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    text-align: center; /* Center text in the button */
+    display: inline-block; /* Make the button inline-block for better alignment */
+}
+.viewrec:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    text-decoration: none; /* Remove underline on hover */
+    text-decoration: none; /* Remove underline from links */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+
+}
+.viewrec:active {
+    background-color: #004494; /* Even darker blue when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect when clicked */
+    transform: translateY(1px); /* Slightly move the button down when clicked */
+    transition: background-color 0.1s ease, transform 0.1s ease; /* Quick transition for click effect */
+}
+
+.btn {
+    margin-top: 10px; /* Space above buttons */
+    padding: 10px; /* Padding around buttons */
+    background-color: #007bff; /* Blue background for buttons */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+
+}
+
+.img-thumbnail {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    margin-bottom: 20px; /* Space below the image */
+    display: block; /* Make the image a block element for better alignment */
+    
+}
+
+.reclist {
+    margin-top: 20px; /* Space above the recommendation list */
+    padding: 10px; /* Padding around the list */
+    background-color: #f9f9f9; /* Light background for the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding around the list */
+    background-color: #ffffff; /* White background for the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the list */
+    font-size: 16px; /* Font size for the list */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the list */
+    border: 1px solid #ddd; /* Border around the list */
+    background-color: #f9f9f9; /* Light background for the list */
+
+}
+.reclist ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 10px; /* Space between items */
+} 
+.reclist h5 {
+    margin-bottom: 10px; /* Space below the heading */
+    text-size-adjust: 100%; /* Prevent text resizing on mobile devices */
+}
+.reclist li {
+    margin-bottom: 5px; /* Space between list items */
+
+
+}
+.reclist a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+}
+.reclist a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+
+}
+
+.img-thumbnail {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    margin-bottom: 20px; /* Space below the image */
+    display: block; /* Make the image a block element for better alignment */
+}
+
+.recommended-recepies {
+    margin-top: 20px; /* Space above the recommendation list */
+    padding: 10px; /* Padding around the list */
+    background-color: #f9f9f9; /* Light background for the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding around the list */
+    background-color: #ffffff; /* White background for the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the list */
+    font-size: 16px; /* Font size for the list */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Text color for the list */
+    border: 1px solid #ddd; /* Border around the list */
+    background-color: #f9f9f9; /* Light background for the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the list */
+    font-size: 16px; /* Font size for the list */
+}
+
+.recommended-recepies ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 10px; /* Space between items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+}
+
+
+.recommended-recepies h5 {
+    margin-bottom: 10px; /* Space below the heading */
+    text-size-adjust: 100%; /* Prevent text resizing on mobile devices */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 10px; /* Space between items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+
+}
+.recommended-recepies li {
+    margin-bottom: 5px; /* Space between list items */
+}
+.recommended-recepies a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+}
+.recommended-recepies a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+.recommended-recepies img {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    margin-bottom: 20px; /* Space below the image */
+    display: block; /* Make the image a block element for better alignment */
+}
+.recommended-recepies h5 {
+    margin-bottom: 10px; /* Space below the heading */
+    text-size-adjust: 100%; /* Prevent text resizing on mobile devices */
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ recipe.title }}{% endblock %}
+
+{% block content %}
+<div class="recipe-title">
+    <h1>{{ recipe.title }}</h1>
+    {% if recipe.image_filename %}
+        <img src="{{ url_for('static', filename='uploads/' + recipe.image_filename) }}" alt="{{ recipe.title }}" class="img-fluid" style="max-height: 400px; object-fit: cover;">
+    {% endif %}
+    <h3 class="ingredients">Ingredients:</h3>
+    <p>{{ recipe.ingredients }}</p>
+    <h3 class="instructions">Instructions:</h3>
+    <p>{{ recipe.instructions }}</p>
+    <a href="{{ url_for('view_recipes') }}" class="btn btn-secondary">Back to Recipes</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="welcome-message">
+    <h1>Welcome to the Recipe App</h1>
+    <p>This is the home page where you can manage your recipes.</p>
+</div>
+
+<div class="latest-recipes">
+    <h2>Latest Recipes</h2>
+    <ul class="list-group">
+        {% for recipe in latest_recipes %}
+            <li class="list-group-item">
+                <h5 class="reclist"><a href="{{ url_for('recipe_detail', recipe_id=recipe.id) }}">{{ recipe.title }}</a></h5>
+                {% if recipe.image_filename %}
+                    <img class="img-thumbnail" src="{{ url_for('static', filename='uploads/' + recipe.image_filename) }}" alt="{{ recipe.title }}" class="img-fluid" style="max-height: 300px; object-fit: cover;">
+                {% endif %}
+            </li>
+        {% endfor %}   
+    </ul>
+
+    <a href="{{ url_for('add_recipe') }}" class="btn btn-primary mt-3">Add New Recipe</a>
+</div>
+
+<div class="reccommended-recipes">
+    <h2>Recommended Recipes</h2>
+    <ul class="list-group>
+        {% for recipe in recommended_recipes %}
+            <li class="list-group-item">
+                <a href="{{ url_for('recipe_detail', recipe_id=recipe.id) }}">{{ recipe.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

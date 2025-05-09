@@ -16,6 +16,10 @@
                 </li>
             {% endfor %}
         </ul>
+        <a href="{{ url_for('add_recipe') }}" class="btn btn-primary mt-3">Add a New Recipe</a>
+        <a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">Back to Home</a>
+        
+
     {% else %}
         <p>No recipes available yet.</p>
     {% endif %}

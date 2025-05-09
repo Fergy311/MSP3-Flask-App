@@ -7,4 +7,34 @@
     <h1>Welcome to the Recipe App</h1>
     <p>This is the home page where you can manage your recipes.</p>
 </div>
+<div class="container mt-4">
+    <h2>Latest Recipes</h2>
+        {% for recipe in recipes if loop.index <= 5 %}  <!-- Display only the first 5 recipes -->
+            <li class="list-group-item">
+                <a href="{{ url_for('view_recipe', recipe_id=recipe.id) }}">{{ recipe.title }}</a>
+            </li>
+        {% endfor %}
+        {% for recipe in recipes %}
+            <li class="list-group-item">
+                <a href="{{ url_for('view_recipe', recipe_id=recipe.id) }}">{{ recipe.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('view_recipes') }}" class="btn btn-primary mt-3">View All Recipes</a>
+</div>
+<div class="container mt-4">
+    <h2>Add a Recipe</h2>
+    <form method="POST" action="{{ url_for('add_recipe') }}">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description:</label>
+            <textarea class="form-control" id="description" name="description" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Recipe</button>
+    </form>
+</div>
+
 {% endblock %}

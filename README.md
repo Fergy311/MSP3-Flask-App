@@ -3,9 +3,9 @@
 
 * This will be my submission for Codes institute's Milestone Project Three in my web applictation development course, showcaseing my Javascript and python  delvelopment.
 
-## [Live project] (https://fergy311.github.io/MSP3-v2-/)
+## [Live project] ()
 
-## [MSP Repsoitory ] (https://github.com/Fergy311/MSP3-v2-)
+## [MSP Repsoitory ] ()
 
 ## contents 
     - [user experience] (#user-experience) 
@@ -50,11 +50,13 @@
 
 - I used, the fonts for the text on the site. 
 
+
+
 - i chose  because of the bold definition and clear message it carries
 
  ### imagary 
 
-- All imagary on the site is taken from the Spoonacular API, matching with the recipes provided.
+- 
 
 # [Wireframes]()
 
@@ -71,11 +73,18 @@
 
 - a community page full of other users recipes, promoting collaboration.
 
-- 
+- User login section and a profile page for each user. 
+
+- A search bar to allow users to search for recipes by ingredient, title, or description. 
+
+- A user profile page that allows users to save their favorite recipes and view their saved recipes. 
+
+- A recipe page that allows users to save their favorite recipes and view their saved 
 
 -  
 
 # Technologies Used
+
 
 ## Languages Used
 
@@ -110,16 +119,6 @@
 
   # Deployment
 
-## GitHub Pages
-
-The project was deployed to GitHub Pages using these steps:
-
-1. Log in to GitHub and go to the [GitHub Repository](https://github.com/Fergy311/course-reposi)
-2. Locate the Navbar at the top of the Repository (not top of page). Click the Settings tab.
-3. Locate the Navbar on the left hand side of the page. Click the "Pages" section (under 'Code and automation').
-4. Under "Source", click the dropdown called "None" and select "main". Click save.
-5. The page will automatically refresh.
-6. A notification will appear at the top of the page with the [link](https://fergy311.github.io/course-reposi/) to the deployed site. You can return to this GitHub Pages section to access the link.
 
 ## Forking the GitHub Repository
 
